@@ -1,7 +1,11 @@
 import os, json, shutil, sys # adding all the necessary packages.
 from subprocess import PIPE, run # this will help us in running the code in GOLang. 
 
-def main():
+def main(source, target):
+    # task 1
+    cwd = os.getcwd() # this line will get the Current Working Directory and will save it to the cwd var.
+    source_path = os.path.join(cwd, source) # this will join the path in cwd var to the file name in source var
+    target_path = os.path.join(cwd, target) # this will join the path in cwd var to the file name in target var
     return 0
 
 if __name__ == "__main__":
@@ -12,4 +16,4 @@ if __name__ == "__main__":
     source, target = args[1:]
     # test
     # print(source, target)
-    # main()
+    main(source, target)
