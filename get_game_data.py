@@ -9,5 +9,7 @@ if __name__ == "__main__":
     # print(args)
     if len(args) != 3:
         raise Exception("You must pass a source and a directory file to complete the action.") # that is how you add a custom exception.
+    source, target = args[1:]
+    # test
+    # print(source, target)
     # main()
-    
