@@ -7,8 +7,8 @@ def main(source, target):
     source_path = os.path.join(cwd, source) # this will join the path in cwd var to the file name in source var
     target_path = os.path.join(cwd, target) # this will join the path in cwd var to the file name in target var
     # test
-    # print(source_path)
-    # print(target_path)
+    print(source_path)
+    print(target_path)
     
     return 0
 
