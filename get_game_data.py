@@ -3,6 +3,18 @@ from subprocess import PIPE, run # this will help us in running the code in GOLa
 
 GAME_DIR_PATTERN = "game" # this is just a global scope var
 
+def find_all_game_dirs_paths(source): 
+    game_paths = []
+    
+    for root, dirs, files in os.walk(source):
+        for foundDirectory in dirs:
+            if GAME_DIR_PATTERN in foundDirectory.lower():
+                path = os.path.join(source, foundDirectory)
+                game_paths.append(path)
+        break
+    
+    pass
+
 def main(source, target):
     # task 1
     cwd = os.getcwd() # this line will get the Current Working Directory and will save it to the cwd var.
