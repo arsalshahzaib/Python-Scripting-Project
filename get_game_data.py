@@ -25,7 +25,7 @@ def main(source, target):
     # print(source_path)
     # print(target_path)
     # test 2
-    temp_game_paths = find_all_game_dirs_paths(source)
+    temp_game_paths = find_all_game_dirs_paths(source_path)
     print(temp_game_paths)
     
     return 0
