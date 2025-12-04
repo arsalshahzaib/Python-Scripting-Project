@@ -1,6 +1,8 @@
 import os, json, shutil, sys # adding all the necessary packages.
 from subprocess import PIPE, run # this will help us in running the code in GOLang. 
 
+GAME_DIR_PATTERN = "game" # this is just a global scope var
+
 def main(source, target):
     # task 1
     cwd = os.getcwd() # this line will get the Current Working Directory and will save it to the cwd var.
