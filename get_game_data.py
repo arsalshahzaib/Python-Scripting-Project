@@ -12,6 +12,7 @@ def find_all_game_dirs_paths(source): # a function to find all the dirs in the s
                 path = os.path.join(source, foundDirectory) # if 'game' is present in the dir name, then a temp path var will be created that will contain the full path of the game dir
                 game_paths.append(path) # the full path in the temp path var will then be appended in the list created on line 7
         break
+    return game_paths
     
     pass
 
