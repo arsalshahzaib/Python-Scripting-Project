@@ -15,3 +15,4 @@ No experience needed—just your determination. Future-proof your career and unl
 
 ## video notes (personal)
 - continue from 14:21
+- continue from 18:58
